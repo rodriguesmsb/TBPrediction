@@ -1,1 +1,1 @@
-# Tuberculosis Predicitio using SINAN
+# Tuberculosis Predicition using SINAN
