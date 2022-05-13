@@ -18,6 +18,13 @@ header{
     height: 130px;
 }
 
+footer{
+    border: 1px solid tomato;
+    grid-column: 1/span 12;
+    grid-row: 3 /span 1;
+    height: 50px;
+}
+
 .side_bar{
     border: 1px solid tomato;
     grid-column: 1/span 6;
@@ -28,11 +35,4 @@ header{
     border: 1px solid tomato;
     grid-column: 7 /span 6;
     grid-row: 2 /span 1;
-}
-
-footer{
-    border: 1px solid tomato;
-    grid-column: 1/span 12;
-    grid-row: 3 /span 1;
-    height: 50px;
 }
