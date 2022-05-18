@@ -16,7 +16,9 @@ def make_pred():
         prediction_result = predictor.point_prediction(int(age))
         print(prediction_result)
     
+        return render_template("index.html", prediction_value = prediction_result)
     return render_template("index.html")
+    
     
 
 # @app.route("/sub", methods = ['POST'])
