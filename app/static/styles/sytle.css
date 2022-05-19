@@ -30,6 +30,8 @@ footer{
     border: 1px solid tomato;
     grid-column: 1/span 6;
     grid-row: 2 /span 1;
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
 .result_area{
@@ -38,10 +40,18 @@ footer{
     grid-row: 2 /span 1;
 }
 
-.slider_input{
-
+.social{
+    grid-column: 1/ span 6;
+    grid-row: 2/ span 1;
 }
 
-.select_input{
-    
+.form_label{
+    margin-left: 10px;
 }
+
+.number_input{
+    width: 200px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
