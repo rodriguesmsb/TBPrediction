@@ -9,6 +9,7 @@
 
 body{
     background-color:#F2FAF5;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -47,11 +48,17 @@ footer{
 
 .form_label{
     margin-left: 10px;
+    
+    
 }
 
 .number_input{
-    width: 200px;
+    width: 250px;
+    height: 30px;
     border-radius: 6px;
     margin-left: 10px;
+    background-color: #F2FAF5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
