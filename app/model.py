@@ -1,11 +1,22 @@
 import pandas as pd
 from xgboost import XGBClassifier
 
+def convert_education(education):
+    if education == "under_5":
+        return [1,0,0,0]
+    elif education == "five_to_nine":
+        return [0,1,0,0]
+    elif education == "nine_to_twelve":
+        return [0,0,1,0]
+    elif education == "nine_to_twelve":
+        return [0,0,0,1]
+
+
 def prediction_prob(idade, raca, sexo, prior_tb, hiv, diabetes, outra_disf, droga, alcool, fuma, bf, educacao = []):
 
     under_5, five_to_9, nine_to_12, more_than_12 = educacao
     model = XGBClassifier()
-    model.load_model("model.json")
+    model.load_model("app/model.json")
 
     data_to_predict = pd.DataFrame.from_dict({"idade": [idade], "cs_raca": [raca], "cs_sexo": [sexo], "prior_tb": [prior_tb], "hiv": [hiv], 
                                               "diabetes": [diabetes], "other_dishx": [outra_disf], "drug_yn": [droga], 
