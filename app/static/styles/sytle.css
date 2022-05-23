@@ -1,5 +1,4 @@
 /**********************************************************************************************/
-
 #container{
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -7,10 +6,12 @@
     height:97vh;
 }
 
+
 body{
     background-color:#F2FAF5;
     font-family: 'Roboto', sans-serif;
 }
+
 
 header{
     background-color:darkseagreen;
@@ -20,6 +21,7 @@ header{
     height: 130px;
 }
 
+
 footer{
     border: 1px solid tomato;
     grid-column: 1/span 12;
@@ -27,29 +29,36 @@ footer{
     height: 50px;
 }
 
+/*
 .side_bar{
     border: 1px solid tomato;
     grid-column: 1/span 6;
     grid-row: 2 /span 1;
     display: grid;
-    grid-template-rows: auto auto;
 }
+*/
 
-.result_area{
-    border: 1px solid tomato;
-    grid-column: 7 /span 6;
-    grid-row: 2 /span 1;
-}
 
 .social{
     grid-column: 1/ span 6;
-    grid-row: 2/ span 1;
+    display: grid;
 }
 
-.form_label{
-    margin-left: 10px;
-    
-    
+
+
+
+.field_social{
+    border-width: 0px; 
+    margin-top: -15px;
+    grid-column: 1 / span 2;
+    display: grid;
+}
+
+.field_clinical{
+    border-width: 0px; 
+    margin-top: -15px;
+    grid-column: 2 / span 2;
+    display: grid;
 }
 
 .number_input{
@@ -60,10 +69,11 @@ footer{
     background-color: #F2FAF5;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    grid-column: 1 / span 2;
 }
 
-.field_social{
-    border-width: 0px; 
-    margin-top: -15px;
+.result_area{
+    border: 1px solid tomato;
+    grid-column: 7 /span 6;
+    grid-row: 2 /span 1;
 }
-
