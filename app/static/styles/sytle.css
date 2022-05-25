@@ -29,36 +29,17 @@ footer{
     height: 50px;
 }
 
-/*
-.side_bar{
-    border: 1px solid tomato;
+
+.form_layout{
     grid-column: 1/span 6;
     grid-row: 2 /span 1;
     display: grid;
-}
-*/
-
-
-.social{
-    grid-column: 1/ span 6;
-    display: grid;
+    grid-template-rows: repeat(12, 1fr);
 }
 
-
-
-
-.field_social{
-    border-width: 0px; 
-    margin-top: -15px;
-    grid-column: 1 / span 2;
-    display: grid;
-}
-
-.field_clinical{
-    border-width: 0px; 
-    margin-top: -15px;
-    grid-column: 2 / span 2;
-    display: grid;
+.form_label_social{
+    grid-column: 1 / span 1;
+    border: 1px solid tomato;
 }
 
 .number_input{
@@ -69,7 +50,7 @@ footer{
     background-color: #F2FAF5;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 1;
 }
 
 .result_area{

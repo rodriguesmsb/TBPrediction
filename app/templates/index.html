@@ -21,17 +21,17 @@
         </header>
 
 
-            <!--<h1 style="margin-left:10px">Entre com as características do indivíduo</h1>-->
-
+        <!--<h1 style="margin-left:10px">Entre com as características do indivíduo</h1>-->
            
-        <form action="/" method="POST" class="social">
+        <form action="/" method="POST", class = "form_layout">
 
-            <h2 class="form_label">Idade</h2>
+
+            <h2 class="form_label_social">Idade</h2>
 
             <input type="number" name="age" class = "number_input" placeholder="Idade em anos" min = 18 max = 99>
 
                 
-            <h2 class="form_label">Sexo</h2>
+            <h2 class="form_label_social">Sexo</h2>
             <fieldset class="field_social">
                 <div>
                     <input type="radio" id="fem" name="sexo" value="0"
@@ -46,7 +46,7 @@
             </fieldset>
 
 
-            <h2 class="form_label">Raca</h2>
+            <h2 class="form_label_social">Raca</h2>
             <fieldset class="field_social">
                 <div>
                     <input type="radio" id="branca" name="raca" value="0"
@@ -71,7 +71,7 @@
             </fieldset>
 
 
-            <h2 class="form_label">Escolaridade</h2>
+            <h2 class="form_label_social">Escolaridade</h2>
             <fieldset class="field_social">
                 <div>
                       <input type="radio" id="under_5" name="esc" value = "under_5"
@@ -95,7 +95,7 @@
                     </div>
             </fieldset>
 
-            <h2 class="form_label">Bolsa família</h2>
+            <h2 class="form_label_social">Bolsa família</h2>
             <fieldset class="field_social">
                 <div>
                     <input type="radio" id="ben" name="bf" value="1"
@@ -109,8 +109,23 @@
                 </div>
             </fieldset>
 
+            <h2 class="form_label_social">Histórico de Tuberculose</h2>
+            <fieldset class="field_clinical">
+                <div>
+                    <input type="radio" id="yes" name="prior_tb" value="1"
+                            checked>
+                    <label for="yes">Sim</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="no" name="bf" value="0">
+                    <label for="no">Não</label>
+                </div>
+            </fieldset>
+
 
             <input type="submit">
+
               
 
         </form>
