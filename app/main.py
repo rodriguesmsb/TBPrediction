@@ -14,15 +14,15 @@ def make_pred():
     #get user response
     if request.method == "POST":
         age = request.form["age"]
-        sex = request.form["sexo"]
-        raca = request.form["raca"]
-        escolaridade = request.form["esc"]
-        escolaridade = app_functions.convert_education(escolaridade)
-        bf = request.form["bf"]
+        sex = request.form["sex"]
+        #raca = request.form["raca"]
+        #escolaridade = request.form["esc"]
+        #escolaridade = app_functions.convert_education(escolaridade)
+        #bf = request.form["bf"]
 
 
-        #print(age)
-        #print(sex)
+        print(age)
+        print(sex)
         #print(raca)
         #print(escolaridade)
     
