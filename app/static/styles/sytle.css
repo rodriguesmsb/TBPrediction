@@ -6,12 +6,10 @@
     height:97vh;
 }
 
-
 body{
     background-color:#F2FAF5;
     font-family: 'Roboto', sans-serif;
 }
-
 
 header{
     background-color:darkseagreen;
@@ -21,7 +19,6 @@ header{
     height: 130px;
 }
 
-
 footer{
     border: 1px solid tomato;
     grid-column: 1/span 12;
@@ -29,21 +26,25 @@ footer{
     height: 50px;
 }
 
-
 .form_layout{
     border: 1px solid tomato;
     grid-column: 1/span 6;
     grid-row: 2 /span 1;
     display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     
 }
 
-.number_input{
+.social_header{
     grid-column: 1/ span 2;
     grid-row: 1/ span 1;
+}
+
+.number_input{
+    grid-column: 1/ span 2;
+    grid-row: 2/ span 1;
     border-radius: 8px;
     border: 0px;
     height: 30px;
@@ -53,7 +54,7 @@ footer{
 
 .number_label{
     grid-column: 1/ span 2;
-    grid-row: 1/ span 1;
+    grid-row: 2/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     
@@ -61,13 +62,90 @@ footer{
 
 .sex_label{
     grid-column: 1/ span 2;
-    grid-row: 2/ span 1;
+    grid-row: 3/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .sex_input{
     grid-column: 1/ span 2;
+    grid-row: 3/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
+.race_label{
+    grid-column: 1/ span 2;
+    grid-row: 4/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.race_input{
+    grid-column: 1/ span 2;
+    grid-row: 4/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
+.esc_label{
+    grid-column: 1/ span 2;
+    grid-row: 5/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.esc_input{
+    grid-column: 1/ span 2;
+    grid-row: 5/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
+.bf_label{
+    grid-column: 1/ span 2;
+    grid-row: 6/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.bf_input{
+    grid-column: 1/ span 2;
+    grid-row: 6/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
+.com_header{
+    grid-column: 3/ span 2;
+    grid-row: 1/ span 1;
+}
+
+.tb_label{
+    grid-column: 3/ span 2;
+    grid-row: 2/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.tb_input{
+    grid-column: 3/ span 2;
     grid-row: 2/ span 1;
     border-radius: 8px;
     border: 0px;
@@ -82,3 +160,5 @@ footer{
     grid-column: 7 /span 6;
     grid-row: 2 /span 1;
 }
+
+

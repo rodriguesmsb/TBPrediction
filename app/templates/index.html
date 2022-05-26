@@ -24,8 +24,9 @@
         <!--<h1 style="margin-left:10px">Entre com as características do indivíduo</h1>-->
            
         <form action="/" method="POST", class = "form_layout">
+            <h3 class = "social_header">Características Socias</h3>
 
-            <label for="quantity" class = "number_label">Digite sua idade:</label>
+            <label for="quantity" class = "number_label">Digite a idade:</label>
             <input type="number" name="age" class = "number_input" placeholder="Idade em anos" min = 18 max = 99>
 
             <label for="sex" class = "sex_label">Selecione o sexo:</label>
@@ -33,6 +34,39 @@
                 <option value="0">Feminino</option>
                 <option value="1">Masculino</option>
             </select>
+
+            <label for="race" class = "race_label">Selecione a raca:</label>
+            <select name="race" id="race" class = "race_input">
+                <option value="0">Branca</option>
+                <option value="1">Negra</option>
+                <option value="1">Parda</option>
+                <option value="1">Outra</option>
+            </select>
+
+            <label for="esc" class = "esc_label">Informe a escolaridade:</label>
+            <select name="esc" id="esc" class = "esc_input">
+                <option value="under_5">< 5 anos</option>
+                <option value="five_to_9">5 a 9 anos</option>
+                <option value="nine_to_12">9 a 12 anos</option>
+                <option value="twelve_more">>12 anos</option>
+            </select>
+
+            <label for="bf" class = "bf_label">Recebe bolsa família:</label>
+            <select name="bf" id="bf" class = "bf_input">
+                <option value="1">Sim</option>
+                <option value="0">Não</option>
+            </select>
+
+
+            <h3 class = "com_header">Comorbidades</h3>
+
+            <label for="tb" class = "tb_label">Histórico de Tb:</label>
+            <select name="tb" id="tb" class = "tb_input">
+                <option value="1">Sim</option>
+                <option value="0">Não</option>
+            </select>
+
+
             
 
 
