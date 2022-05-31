@@ -15,16 +15,16 @@ def make_pred():
     if request.method == "POST":
         age = request.form["age"]
         sex = request.form["sex"]
-        #raca = request.form["raca"]
-        #escolaridade = request.form["esc"]
-        #escolaridade = app_functions.convert_education(escolaridade)
-        #bf = request.form["bf"]
+        raca = request.form["race"]
+        escolaridade = request.form["esc"]
+        escolaridade = app_functions.convert_education(escolaridade)
+        bf = request.form["bf"]
 
 
         print(age)
         print(sex)
-        #print(raca)
-        #print(escolaridade)
+        print(raca)
+        print(escolaridade)
     
         #return render_template("index.html", prediction_value = prediction_result)
         return render_template("index.html")
