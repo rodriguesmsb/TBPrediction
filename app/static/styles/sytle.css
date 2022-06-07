@@ -132,6 +132,42 @@ footer{
     background-color:whitesmoke;
 }
 
+.jail_label{
+    grid-column: 1/ span 2;
+    grid-row: 7/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.jail_input{
+    grid-column: 1/ span 2;
+    grid-row: 7/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
+.hom_label{
+    grid-column: 1/ span 2;
+    grid-row: 8/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.hom_input{
+    grid-column: 1/ span 2;
+    grid-row: 8/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
 .com_header{
     grid-column: 3/ span 2;
     grid-row: 1/ span 1;
@@ -184,6 +220,44 @@ footer{
 .alch_input{
     grid-column: 3/ span 2;
     grid-row: 4/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
+
+.tobaco_label{
+    grid-column: 3/ span 2;
+    grid-row: 5/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.tobaco_input{
+    grid-column: 3/ span 2;
+    grid-row: 5/ span 1;
+    border-radius: 8px;
+    border: 0px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:whitesmoke;
+}
+
+
+.other_label{
+    grid-column: 3/ span 2;
+    grid-row: 6/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.other_input{
+    grid-column: 3/ span 2;
+    grid-row: 6/ span 1;
     border-radius: 8px;
     border: 0px;
     height: 30px;
