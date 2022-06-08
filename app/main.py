@@ -1,22 +1,12 @@
 from flask import Flask
 from flask import request
 from flask import render_template
+from flask import jsonify
 import app.model as app_functions
 import pandas as pd
 
 
-
 app = Flask(__name__)
-
-data = pd.read_csv("app/static/data/train.csv")
-survived = data[(data['Survived']== 1) & (data["Age"].notnull())]
-
-
-def calculate_percentage(val, total):
-        """Calculates the percentage of a value over a total"""
-        percent = np.divide(val, total)
-
-        return percent
 
 
 @app.route("/", methods = ['GET','POST'])
@@ -42,20 +32,3 @@ def make_pred():
         #return render_template("index.html", prediction_value = prediction_result)
         return render_template("index.html")
     return render_template("index.html")
-
-
-@app.route('/get_piechart_data')
-def get_piechart_data():
-    class_labels = ['Class I', 'Class II', 'Class III']
-    pclass_percent = calculate_percentage(survived.groupby('Pclass').size().values, survived['PassengerId'].count())*100
-
-    pieChartData = []
-    for index, item in enumerate(pclass_percent):
-        eachData = {}
-        eachData['category'] = class_labels[index]
-        eachData['measure'] =  round(item,1)
-        pieChartData.append(eachData)
-
-    return jsonify(pieChartData)
-    
-
