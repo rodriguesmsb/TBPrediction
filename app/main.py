@@ -19,7 +19,19 @@ def make_pred():
 
         #convert dict to a data frame
         result = pd.DataFrame.from_dict(result)
+        under_5, five_to_9, nine_to_12, more_than_12 = app_functions.convert_education(result["esc"][0])
+
+        result.drop(columns = ["esc"], inplace = True)
+        
+        #add extra columns
+        esc_names = ["educ_cat_12+ years", "educ_cat_5-9 years", "educ_cat_9-12 years", "educ_cat_under_5"]
+        esc_val = [more_than_12, five_to_9, nine_to_12, under_5]
+        for col, value in zip(esc_names, esc_val):
+            result[col] = value
         print(result)
+
+        
+    
         
     
         #return render_template("index.html", prediction_value = prediction_result)
