@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/sytle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <title>Tuberculosis prediction</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header>
+            <img src="../static/styles/logo.png">
+        </header>
+
+        <form action="/" method="POST", class = "form_layout">
+            <h3 class = "social_header">Características Socias</h3>
+
+            <label for="quantity" class = "number_label">Digite a idade:</label>
+            <input type="number" name="age" class = "number_input" placeholder="Idade em anos" min = 18 max = 99>
+
+            <label for="sex" class = "sex_label">Selecione o sexo:</label>
+            <select name="sex" id="sex" class = "sex_input">
+                <option value=0>Feminino</option>
+                <option value=1>Masculino</option>
+            </select>
+
+            <label for="race" class = "race_label">Selecione a raca:</label>
+            <select name="race" id="race" class = "race_input">
+                <option value=0>Branca</option>
+                <option value=1>Negra</option>
+                <option value=1>Parda</option>
+                <option value=1>Outra</option>
+            </select>
+
+            <label for="esc" class = "esc_label">Informe a escolaridade:</label>
+            <select name="esc" id="esc" class = "esc_input">
+                <option value="under_5">< 5 anos</option>
+                <option value="five_to_9">5 a 9 anos</option>
+                <option value="nine_to_12">9 a 12 anos</option>
+                <option value="twelve_more">>12 anos</option>
+            </select>
+
+            <label for="bf" class = "bf_label">Recebe bolsa família:</label>
+            <select name="bf" id="bf" class = "bf_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+
+            <label for="jail" class = "jail_label">População carcerária:</label>
+            <select name="jail" id="jail" class = "jail_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+
+            <label for="hom" class = "hom_label">Vive em situação de rua:</label>
+            <select name="hom" id="hom" class = "hom_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+
+
+            <h3 class = "com_header">Comorbidades</h3>
+            <label for="tb" class = "tb_label">Histórico de Tb:</label>
+            <select name="tb" id="tb" class = "tb_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+
+
+            <label for="drug" class = "drug_label">Usuário de drogas:</label>
+            <select name="drug" id="drug" class = "drug_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+
+
+            <label for="alch" class = "alch_label">Etilista:</label>
+            <select name="alch" id="alch" class = "alch_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+
+            <label for="tobaco" class = "tobaco_label">Tabagista:</label>
+            <select name="tobaco" id="tobaco" class = "tobaco_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+
+            <label for="other" class = "other_label">Outra comorbidade:</label>
+            <select name="other" id="other" class = "other_input">
+                <option value=1>Sim</option>
+                <option value=0>Não</option>
+            </select>
+                
+
+        </form>
+
+            
+
+        <div class="result_area">
+            <canvas class = "pieChart" width="400", height="400"></canvas>
+            <script>
+                var ctx = document.getElementById("pieChart").getContext("2d")
+                var pieChart = new Chart(ctx, {
+                    type: "line",
+                    data: {
+                        labels: {{ labels | safe}},
+                        datasets: [
+                            {
+                                label: "Data values",
+                                data: {{ values | safe}}
+
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true
+                    }
+                });
+
+            </script>
+            
+
+        </div>
+
+        <footer></footer>
+
+    </div>
+
+</body>
+
+</html>

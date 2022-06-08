@@ -28,7 +28,19 @@ def make_pred():
         esc_val = [more_than_12, five_to_9, nine_to_12, under_5]
         for col, value in zip(esc_names, esc_val):
             result[col] = value
+
+        
+        data = [
+            ("Failure", 0.85),
+            ("Sucess", 0.15)
+        ]
+
+        #split data into two list
+
+        labels = [row[0] for row in data]
+        values = [row[1] for row in data]
+      
+
     
-        #return render_template("index.html", prediction_value = prediction_result)
-        return render_template("index.html")
+        return render_template("graph.html", labels = labels, values = values)
     return render_template("index.html")
