@@ -18,12 +18,8 @@
 
         <header>
             <img src="../static/styles/logo.png">
-
         </header>
 
-
-        <!--<h1 style="margin-left:10px">Entre com as características do indivíduo</h1>-->
-           
         <form action="/" method="POST", class = "form_layout">
             <h3 class = "social_header">Características Socias</h3>
 
@@ -72,7 +68,6 @@
 
 
             <h3 class = "com_header">Comorbidades</h3>
-
             <label for="tb" class = "tb_label">Histórico de Tb:</label>
             <select name="tb" id="tb" class = "tb_input">
                 <option value=1>Sim</option>
@@ -85,6 +80,7 @@
                 <option value=1>Sim</option>
                 <option value=0>Não</option>
             </select>
+
 
             <label for="alch" class = "alch_label">Etilista:</label>
             <select name="alch" id="alch" class = "alch_input">
@@ -105,8 +101,6 @@
             </select>
 
 
-            
-
             <input type="submit" value="Submit">
                 
         
@@ -117,9 +111,16 @@
 
         <div class="result_area">
 
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+            <script src="https://d3js.org/queue.v1.min.js"></script>
+                <script>
+                    var piechartDataUrl = "{{url_for('get_piechart_data') }}";
+                </script>
+                <script src="{{ url_for('static', filename='js/pieChart.js') }}"></script>
+                <script src="{{ url_for('static', filename='js/updateChart.js') }}"></script>
+                <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-           
-        
 
         </div>
 

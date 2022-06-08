@@ -8,6 +8,16 @@ import pandas as pd
 
 app = Flask(__name__)
 
+data = pd.read_csv("app/static/data/train.csv")
+survived = data[(data['Survived']== 1) & (data["Age"].notnull())]
+
+
+def calculate_percentage(val, total):
+        """Calculates the percentage of a value over a total"""
+        percent = np.divide(val, total)
+
+        return percent
+
 
 @app.route("/", methods = ['GET','POST'])
 def make_pred():
@@ -28,24 +38,24 @@ def make_pred():
         esc_val = [more_than_12, five_to_9, nine_to_12, under_5]
         for col, value in zip(esc_names, esc_val):
             result[col] = value
-        print(result)
-
-        
-    
-        
     
         #return render_template("index.html", prediction_value = prediction_result)
         return render_template("index.html")
     return render_template("index.html")
-    
-    
 
-# @app.route("/sub", methods = ['POST'])
-# def submit():
-#     #convert HTML info to python info
-#     if request.method == "POST":
-#         name = request.form["username"]
 
-#     #python -> HTML
-#     return render_template("sub.html", name = name)
+@app.route('/get_piechart_data')
+def get_piechart_data():
+    class_labels = ['Class I', 'Class II', 'Class III']
+    pclass_percent = calculate_percentage(survived.groupby('Pclass').size().values, survived['PassengerId'].count())*100
+
+    pieChartData = []
+    for index, item in enumerate(pclass_percent):
+        eachData = {}
+        eachData['category'] = class_labels[index]
+        eachData['measure'] =  round(item,1)
+        pieChartData.append(eachData)
+
+    return jsonify(pieChartData)
+    
 
