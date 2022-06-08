@@ -2,6 +2,7 @@ from flask import Flask
 from flask import request
 from flask import render_template
 import app.model as app_functions
+import pandas as pd
 
 
 
@@ -13,18 +14,13 @@ def make_pred():
 
     #get user response
     if request.method == "POST":
-        age = request.form["age"]
-        sex = request.form["sex"]
-        raca = request.form["race"]
-        escolaridade = request.form["esc"]
-        escolaridade = app_functions.convert_education(escolaridade)
-        bf = request.form["bf"]
 
+        result = request.form.to_dict(flat = False) #convert form to a dict
 
-        print(age)
-        print(sex)
-        print(raca)
-        print(escolaridade)
+        #convert dict to a data frame
+        result = pd.DataFrame.from_dict(result)
+        print(result)
+        
     
         #return render_template("index.html", prediction_value = prediction_result)
         return render_template("index.html")
