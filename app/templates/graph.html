@@ -106,23 +106,24 @@
             
 
         <div class="result_area">
-            <canvas id = "pieChart" width="400", height="400"></canvas>
+            <canvas id = "pieChart" width="600", height="500"></canvas>
             <script>
                 var ctx = document.getElementById("pieChart").getContext("2d")
                 var pieChart = new Chart(ctx, {
-                    type: "line",
+                    type: "doughnut",
                     data: {
                         labels: {{ labels | safe}},
                         datasets: [
                             {
                                 label: "Data values",
-                                data: {{ values | safe}}
+                                data: {{ values | safe}},
+                                backgroundColor: ["#F40B0B","#0F0BF4"]
 
                             }
                         ]
                     },
                     options: {
-                        responsive: true
+                        responsive: false
                     }
                 });
 
