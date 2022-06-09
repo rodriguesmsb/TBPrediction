@@ -36,7 +36,6 @@ def make_pred():
         ]
 
         #split data into two list
-
         labels = [row[0] for row in data]
         values = [row[1] for row in data]
       
