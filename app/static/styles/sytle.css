@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:#F2FAF5;
+    background-color: #e1eedd;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,12 +21,13 @@ header{
 }
 
 footer{
-    border: 1px solid tomato;
+    border-radius: 8px;
     grid-column: 1/span 12;
     grid-row: 3 /span 1;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     height: 50px;
+    background-color: darkseagreen;
 }
 
 .footer_logo{
@@ -37,14 +38,12 @@ footer{
 
 .footer_img{
     fill: black;
-    margin-left: 80px;
+    margin-left: 70px;
 }
-
 
 svg:hover path {
-    fill: darkseagreen;
+    fill: #f6c453;
 }
-
 
 .form_layout{
     border: 1px solid tomato;
@@ -62,6 +61,15 @@ svg:hover path {
     grid-row: 1/ span 1;
 }
 
+body input{
+    background-color:  #e1eedd;
+}
+
+.number_input:hover{
+    background-color:#fefbe9;
+    color: black;
+}
+
 .number_input{
     grid-column: 1/ span 2;
     grid-row: 2/ span 1;
@@ -69,7 +77,6 @@ svg:hover path {
     border: 0px;
     height: 30px;
     margin-top: 20px;
-    background-color:whitesmoke;
 }
 
 .number_label{
