@@ -11,7 +11,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
 header{
     background-color:darkseagreen;
     grid-column: 1/span 12;
@@ -271,9 +270,10 @@ body select{
 
 @media only screen and (max-width: 660px){
 
-    .header{
-        display: block;
+    header{
         position: fixed;
+        grid-column: 1/span 12;
+        grid-row: 1 /span 1;
     }
 
     /**remove graph**/
@@ -283,6 +283,7 @@ body select{
 
     .form_layout{
         grid-column: 1/span 12;
+        margin-top: 120px;
     }
 
     .social_header{
