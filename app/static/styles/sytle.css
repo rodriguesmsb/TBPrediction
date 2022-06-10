@@ -14,20 +14,23 @@ body{
 
 header{
     background-color:darkseagreen;
-    border-radius: 10px;
     grid-column: 1/span 12;
     grid-row: 1 /span 1;
     height: 130px;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 footer{
-    border-radius: 8px;
     grid-column: 1/span 12;
     grid-row: 3 /span 1;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     height: 50px;
     background-color: darkseagreen;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 .footer_logo{
@@ -63,6 +66,14 @@ svg:hover path {
 
 body input{
     background-color:  #e1eedd;
+    border-radius: 8px;
+    border: 2px solid #183a1d;
+}
+
+body select{
+    background-color: #e1eedd;
+    border-radius: 8px;
+    border: 2px solid #183a1d;
 }
 
 .number_input:hover{
@@ -73,8 +84,6 @@ body input{
 .number_input{
     grid-column: 1/ span 2;
     grid-row: 2/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
 }
@@ -84,7 +93,6 @@ body input{
     grid-row: 2/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    
 }
 
 .sex_label{
@@ -97,12 +105,9 @@ body input{
 .sex_input{
     grid-column: 1/ span 2;
     grid-row: 3/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .race_label{
@@ -115,30 +120,23 @@ body input{
 .race_input{
     grid-column: 1/ span 2;
     grid-row: 4/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .esc_label{
     grid-column: 1/ span 2;
     grid-row: 5/ span 1;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
 }
 
 .esc_input{
     grid-column: 1/ span 2;
     grid-row: 5/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .bf_label{
@@ -151,12 +149,9 @@ body input{
 .bf_input{
     grid-column: 1/ span 2;
     grid-row: 6/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .jail_label{
@@ -169,12 +164,9 @@ body input{
 .jail_input{
     grid-column: 1/ span 2;
     grid-row: 7/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .hom_label{
@@ -187,12 +179,9 @@ body input{
 .hom_input{
     grid-column: 1/ span 2;
     grid-row: 8/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .com_header{
@@ -210,12 +199,9 @@ body input{
 .tb_input{
     grid-column: 3/ span 2;
     grid-row: 2/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 
@@ -229,12 +215,9 @@ body input{
 .drug_input{
     grid-column: 3/ span 2;
     grid-row: 3/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .alch_label{
@@ -247,12 +230,9 @@ body input{
 .alch_input{
     grid-column: 3/ span 2;
     grid-row: 4/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 
@@ -266,12 +246,9 @@ body input{
 .tobaco_input{
     grid-column: 3/ span 2;
     grid-row: 5/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 
@@ -285,20 +262,13 @@ body input{
 .other_input{
     grid-column: 3/ span 2;
     grid-row: 6/ span 1;
-    border-radius: 8px;
-    border: 0px;
     height: 30px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color:whitesmoke;
 }
 
 .result_area{
     border: 1px solid tomato;
     grid-column: 7 /span 6;
     grid-row: 2 /span 1;
-}
-
-.pieChart{
-  
 }
