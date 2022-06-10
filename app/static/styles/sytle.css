@@ -68,12 +68,14 @@ body input{
     background-color:  #e1eedd;
     border-radius: 8px;
     border: 2px solid #183a1d;
+    font-family: 'Roboto', sans-serif;
 }
 
 body select{
     background-color: #e1eedd;
     border-radius: 8px;
     border: 2px solid #183a1d;
+    font-family: 'Roboto', sans-serif;
 }
 
 .number_input:hover{
@@ -107,7 +109,6 @@ body select{
     grid-row: 3/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .race_label{
@@ -122,7 +123,6 @@ body select{
     grid-row: 4/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .esc_label{
@@ -136,7 +136,6 @@ body select{
     grid-row: 5/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .bf_label{
@@ -151,7 +150,6 @@ body select{
     grid-row: 6/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .jail_label{
@@ -166,7 +164,7 @@ body select{
     grid-row: 7/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
+   
 }
 
 .hom_label{
@@ -181,7 +179,6 @@ body select{
     grid-row: 8/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .com_header{
@@ -201,7 +198,6 @@ body select{
     grid-row: 2/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -217,7 +213,6 @@ body select{
     grid-row: 3/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .alch_label{
@@ -232,7 +227,6 @@ body select{
     grid-row: 4/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -248,7 +242,6 @@ body select{
     grid-row: 5/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -264,11 +257,223 @@ body select{
     grid-row: 6/ span 1;
     height: 30px;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .result_area{
     border: 1px solid tomato;
     grid-column: 7 /span 6;
     grid-row: 2 /span 1;
+}
+
+
+/**********************************************************************************************/
+/** create style for cel **/
+
+@media only screen and (max-width: 660px){
+
+    .header{
+        display: block;
+        position: fixed;
+    }
+
+    /**remove graph**/
+    .result_area{
+        display: none;
+    }
+
+    .form_layout{
+        grid-column: 1/span 12;
+    }
+
+    .social_header{
+        grid-column: 2/ span 6;
+        grid-row: 1/ span 1;
+    }
+
+
+    .number_label{
+        grid-column: 1/ span 3;
+        grid-row: 2/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+
+    .number_input{
+        grid-column: 1/ span 3;
+        grid-row: 2/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .sex_label{
+        grid-column: 1/ span 3;
+        grid-row: 3/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .sex_input{
+        grid-column: 1/ span 3;
+        grid-row: 3/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .race_label{
+        grid-column: 1/ span 3;
+        grid-row: 4/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .race_input{
+        grid-column: 1/ span 3;
+        grid-row: 4/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .esc_label{
+        grid-column: 1/ span 3;
+        grid-row: 5/ span 1;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .esc_input{
+        grid-column: 1/ span 3;
+        grid-row: 5/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .bf_label{
+        grid-column: 1/ span 3;
+        grid-row: 6/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .bf_input{
+        grid-column: 1/ span 3;
+        grid-row: 6/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .jail_label{
+        grid-column: 1/ span 3;
+        grid-row: 7/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .jail_input{
+        grid-column: 1/ span 3;
+        grid-row: 7/ span 1;
+        height: 30px;
+        margin-top: 20px;
+       
+    }
+    
+    .hom_label{
+        grid-column: 1/ span 3;
+        grid-row: 8/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .hom_input{
+        grid-column: 1/ span 3;
+        grid-row: 8/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .com_header{
+        grid-column: 2/ span 3;
+        grid-row: 9/ span 1;
+    }
+
+    .tb_label{
+        grid-column: 1/ span 3;
+        grid-row: 10/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .tb_input{
+        grid-column: 1/ span 3;
+        grid-row: 10/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .drug_label{
+        grid-column: 1/ span 3;
+        grid-row: 11/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .drug_input{
+        grid-column: 1/ span 3;
+        grid-row: 11/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    .alch_label{
+        grid-column: 1/ span 3;
+        grid-row: 12/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .alch_input{
+        grid-column: 1/ span 3;
+        grid-row: 12/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    
+    .tobaco_label{
+        grid-column: 1/ span 3;
+        grid-row: 13/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .tobaco_input{
+        grid-column: 1/ span 3;
+        grid-row: 13/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+    
+    .other_label{
+        grid-column: 1/ span 3;
+        grid-row: 14/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .other_input{
+        grid-column: 1/ span 3;
+        grid-row: 14/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+
+    .footer_logo{
+        grid-column: 6/span 1;
+        display: flex;
+        height: 50px;
+    }
+
+    .footer_img{
+        fill: black;
+    }
+
 }
