@@ -1,5 +1,5 @@
 import pandas as pd
-# from xgboost import XGBClassifier
+from xgboost import XGBClassifier
 
 def convert_education(education):
     if education == "under_5":
