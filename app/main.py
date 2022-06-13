@@ -28,6 +28,11 @@ def make_pred():
         esc_val = [more_than_12, five_to_9, nine_to_12, under_5]
         for col, value in zip(esc_names, esc_val):
             result[col] = value
+        print(result)
+
+        ##add new features
+        #result = app_functions.create_feature(result)
+        #print(result)
 
         
         data = [

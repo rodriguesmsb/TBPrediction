@@ -200,30 +200,45 @@ body select{
 }
 
 
-.drug_label{
+.hiv_label{
     grid-column: 3/ span 2;
     grid-row: 3/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
-.drug_input{
+.hiv_input{
     grid-column: 3/ span 2;
     grid-row: 3/ span 1;
     height: 30px;
     margin-top: 20px;
 }
 
-.alch_label{
+
+.drug_label{
     grid-column: 3/ span 2;
     grid-row: 4/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
-.alch_input{
+.drug_input{
     grid-column: 3/ span 2;
     grid-row: 4/ span 1;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.alch_label{
+    grid-column: 3/ span 2;
+    grid-row: 5/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.alch_input{
+    grid-column: 3/ span 2;
+    grid-row: 5/ span 1;
     height: 30px;
     margin-top: 20px;
 }
@@ -231,14 +246,14 @@ body select{
 
 .tobaco_label{
     grid-column: 3/ span 2;
-    grid-row: 5/ span 1;
+    grid-row: 6/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .tobaco_input{
     grid-column: 3/ span 2;
-    grid-row: 5/ span 1;
+    grid-row: 6/ span 1;
     height: 30px;
     margin-top: 20px;
 }
@@ -246,14 +261,14 @@ body select{
 
 .other_label{
     grid-column: 3/ span 2;
-    grid-row: 6/ span 1;
+    grid-row: 7/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .other_input{
     grid-column: 3/ span 2;
-    grid-row: 6/ span 1;
+    grid-row: 7/ span 1;
     height: 30px;
     margin-top: 20px;
 }
@@ -408,31 +423,47 @@ body select{
         height: 30px;
         margin-top: 20px;
     }
+
+    .hiv_label{
+        grid-column: 1/ span 3;
+        grid-row: 11/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .hiv_input{
+        grid-column: 1/ span 3;
+        grid-row: 11/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+
+    
     
     .drug_label{
         grid-column: 1/ span 3;
-        grid-row: 11/ span 1;
+        grid-row: 12/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .drug_input{
         grid-column: 1/ span 3;
-        grid-row: 11/ span 1;
+        grid-row: 12/ span 1;
         height: 30px;
         margin-top: 20px;
     }
     
     .alch_label{
         grid-column: 1/ span 3;
-        grid-row: 12/ span 1;
+        grid-row: 13/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .alch_input{
         grid-column: 1/ span 3;
-        grid-row: 12/ span 1;
+        grid-row: 13/ span 1;
         height: 30px;
         margin-top: 20px;
     }
@@ -440,14 +471,14 @@ body select{
     
     .tobaco_label{
         grid-column: 1/ span 3;
-        grid-row: 13/ span 1;
+        grid-row: 14/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .tobaco_input{
         grid-column: 1/ span 3;
-        grid-row: 13/ span 1;
+        grid-row: 14/ span 1;
         height: 30px;
         margin-top: 20px;
     }
@@ -455,14 +486,14 @@ body select{
     
     .other_label{
         grid-column: 1/ span 3;
-        grid-row: 14/ span 1;
+        grid-row: 15/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .other_input{
         grid-column: 1/ span 3;
-        grid-row: 14/ span 1;
+        grid-row: 15/ span 1;
         height: 30px;
         margin-top: 20px;
     }
