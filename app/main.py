@@ -19,9 +19,19 @@ def make_pred():
 
         #convert dict to a data frame
         result = pd.DataFrame.from_dict(result)
-        under_5, five_to_9, nine_to_12, more_than_12 = app_functions.convert_education(result["esc"][0])
+        for col in result.columns:
+            result[col] = result[col].astype(int)
+        
+        result.rename(columns = {"tb": "prior_tb", "drug":"drug_yn", "other":"other_dishx",
+                                 "alch":"alcohol_yn", "tobaco":"tobacco_yn",
+                                 "race": "cs_raca", "sex": "cs_sexo", "esc":"educ_cat"}, inplace = True)
 
-        result.drop(columns = ["esc"], inplace = True)
+        ##add new features
+        result = app_functions.create_feature(result)
+
+        under_5, five_to_9, nine_to_12, more_than_12 = app_functions.convert_education(result["educ_cat"][0])
+
+        result.drop(columns = ["educ_cat"], inplace = True)
         
         #add extra columns
         esc_names = ["educ_cat_12+ years", "educ_cat_5-9 years", "educ_cat_9-12 years", "educ_cat_under_5"]
@@ -30,11 +40,10 @@ def make_pred():
             result[col] = value
         print(result)
 
-        ##add new features
-        #result = app_functions.create_feature(result)
+       
+        
         #print(result)
 
-        
         data = [
             ("Failure", 0.85),
             ("Sucess", 0.15)

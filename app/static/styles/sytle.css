@@ -214,64 +214,78 @@ body select{
     margin-top: 20px;
 }
 
-
-.drug_label{
+.diabetes_label{
     grid-column: 3/ span 2;
     grid-row: 4/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
-.drug_input{
+.diabetes_input{
     grid-column: 3/ span 2;
     grid-row: 4/ span 1;
     height: 30px;
     margin-top: 20px;
 }
-
-.alch_label{
-    grid-column: 3/ span 2;
-    grid-row: 5/ span 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.alch_input{
-    grid-column: 3/ span 2;
-    grid-row: 5/ span 1;
-    height: 30px;
-    margin-top: 20px;
-}
-
-
-.tobaco_label{
-    grid-column: 3/ span 2;
-    grid-row: 6/ span 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.tobaco_input{
-    grid-column: 3/ span 2;
-    grid-row: 6/ span 1;
-    height: 30px;
-    margin-top: 20px;
-}
-
 
 .other_label{
     grid-column: 3/ span 2;
-    grid-row: 7/ span 1;
+    grid-row: 5/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .other_input{
     grid-column: 3/ span 2;
-    grid-row: 7/ span 1;
+    grid-row: 5/ span 1;
     height: 30px;
     margin-top: 20px;
 }
+
+
+.drug_label{
+    grid-column: 5/ span 2;
+    grid-row: 2/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.drug_input{
+    grid-column: 5/ span 2;
+    grid-row: 2/ span 1;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.alch_label{
+    grid-column: 5/ span 2;
+    grid-row: 3/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.alch_input{
+    grid-column: 5/ span 2;
+    grid-row: 3/ span 1;
+    height: 30px;
+    margin-top: 20px;
+}
+
+
+.tobaco_label{
+    grid-column: 5/ span 2;
+    grid-row: 4/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.tobaco_input{
+    grid-column: 5/ span 2;
+    grid-row: 4/ span 1;
+    height: 30px;
+    margin-top: 20px;
+}
+
 
 .submit_button{
     grid-column: 6/ span 2;

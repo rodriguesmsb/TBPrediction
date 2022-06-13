@@ -2,13 +2,13 @@ import pandas as pd
 from xgboost import XGBClassifier
 
 def convert_education(education):
-    if education == "under_5":
+    if education == 0:
         return [1,0,0,0]
-    elif education == "five_to_nine":
+    elif education == 1:
         return [0,1,0,0]
-    elif education == "nine_to_twelve":
+    elif education == 2:
         return [0,0,1,0]
-    elif education == "nine_to_twelve":
+    elif education == 3:
         return [0,0,0,1]
 
 def create_feature(data):
