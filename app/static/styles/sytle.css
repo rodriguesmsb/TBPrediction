@@ -273,6 +273,19 @@ body select{
     margin-top: 20px;
 }
 
+.submit_button{
+    grid-column: 6/ span 2;
+    grid-row: 10/ span 1;
+    background-color:  #e1eedd;
+
+}
+
+.submit_button:hover{
+    background-color:#fefbe9;
+    color: black;
+}
+
+
 .result_area{
     border: 1px solid tomato;
     grid-column: 7 /span 6;
@@ -439,7 +452,6 @@ body select{
     }
 
     
-    
     .drug_label{
         grid-column: 1/ span 3;
         grid-row: 12/ span 1;
@@ -483,7 +495,6 @@ body select{
         margin-top: 20px;
     }
     
-    
     .other_label{
         grid-column: 1/ span 3;
         grid-row: 15/ span 1;
@@ -496,6 +507,14 @@ body select{
         grid-row: 15/ span 1;
         height: 30px;
         margin-top: 20px;
+    }
+
+    .submit_button{
+        grid-column: 3/ span 2;
+        grid-row: 16/ span 1;
+        background-color:  #e1eedd;
+        height: 50px;
+    
     }
 
     .footer_logo{
