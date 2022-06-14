@@ -39,8 +39,9 @@ def create_feature(data):
 
 def prediction_prob(data):
 
-
     model = lgb.Booster(model_file = 'app/lightgbm.txt')
+    #model = xgb.XGBClassifier()
+    #model.load_model("app/xgb.json")
 
     return(model.predict(data))
 

@@ -55,6 +55,7 @@ def make_pred():
         
        
         prob = app_functions.prediction_prob(result)[0]
+        
 
 
         data = [
