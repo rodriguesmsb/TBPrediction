@@ -66,7 +66,6 @@
                 <option value=0>Não</option>
             </select>
 
-
             <h3 class = "com_header">Comorbidades</h3>
             <label for="tb" class = "tb_label">Histórico de Tb:</label>
             <select name="tb" id="tb" class = "tb_input">
@@ -80,7 +79,7 @@
                 <option value=0>Não</option>
             </select>
 
-
+            <h3 class = "beha">Comportamento de risco</h3>
             <label for="drug" class = "drug_label">Usuário de drogas:</label>
             <select name="drug" id="drug" class = "drug_input">
                 <option value=1>Sim</option>
@@ -92,7 +91,6 @@
                 <option value=1>Sim</option>
                 <option value=0>Não</option>
             </select>
-
 
             <label for="alch" class = "alch_label">Etilista:</label>
             <select name="alch" id="alch" class = "alch_input">
@@ -111,11 +109,19 @@
                 <option value=1>Sim</option>
                 <option value=0>Não</option>
             </select>
-                
-
+            <div class = "back_button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16"> 
+                    <a href="https://tbprediction.herokuapp.com/"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/> 
+                    <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/></a>
+                </svg>
+            </div>
         </form>
 
-            
+
+        
+
+
+
 
         <div class="result_area">
             <canvas id = "pieChart" width="600", height="500"></canvas>
