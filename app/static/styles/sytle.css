@@ -311,6 +311,10 @@ body select{
     grid-row: 2 /span 1;
 }
 
+#pieChart{
+    margin-left: 50px;
+}
+
 .back_button{
     grid-column: 6/ span 2;
     grid-row: 10/ span 1;
@@ -324,17 +328,14 @@ body select{
 
 @media only screen and (max-width: 660px){
 
+    
     header{
         position: fixed;
         grid-column: 1/span 12;
         grid-row: 1 /span 1;
     }
 
-    /**remove graph**/
-    .result_area{
-        display: none;
-    }
-
+    
     .form_layout{
         grid-column: 1/span 12;
         margin-top: 120px;
@@ -568,14 +569,37 @@ body select{
 
     }
 
+    footer{
+        grid-row: 4/ span 1;
+    }
+
     .footer_logo{
         grid-column: 6/span 1;
         display: flex;
         height: 50px;
+        margin-left: 0px;
     }
 
     .footer_img{
         fill: black;
     }
+
+    .result_area{
+        grid-row: 3/span 1;
+        grid-column: 1/span 12;
+    }
+
+    #pieChart{
+        margin-left: 80px;
+
+    }
+
+
+
+    canvas#pieChart{
+        height: 200px;
+        width: 200px;
+    }
+
 
 }

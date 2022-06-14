@@ -53,11 +53,9 @@ def make_pred():
         for col, value in zip(raca_names, raca_values):
             result[col] = value
         
-        print("estou predizendo sim")
+       
         prob = app_functions.prediction_prob(result)[0]
 
-
-    
 
         data = [
             ("Failure", prob),
@@ -68,7 +66,6 @@ def make_pred():
         labels = [row[0] for row in data]
         values = [row[1] for row in data]
       
-
-    
         return render_template("graph.html", labels = labels, values = values)
+
     return render_template("index.html")
