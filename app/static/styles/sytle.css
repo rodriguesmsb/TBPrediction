@@ -312,7 +312,12 @@ body select{
 }
 
 #pieChart{
-    margin-left: 50px;
+    margin-left: 80px;
+}
+
+canvas#pieChart{
+    height: 600px;
+    width: 500px;
 }
 
 .back_button{
@@ -593,8 +598,6 @@ body select{
         margin-left: 80px;
 
     }
-
-
 
     canvas#pieChart{
         height: 200px;
