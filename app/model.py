@@ -12,14 +12,6 @@ def convert_education(education):
     elif education == 3:
         return [0,0,0,1]
 
-def convert_race(cs_raca):
-    if cs_raca == 0:
-        return [1, 0, 0]
-    elif cs_raca == 1:
-        return [0, 1, 0]
-    elif cs_raca == 2:
-        return [0, 0, 1]
-
 
 
 def create_feature(data):

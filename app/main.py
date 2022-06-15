@@ -35,10 +35,9 @@ def make_pred():
         
 
         under_5, five_to_9, nine_to_12, more_than_12 = app_functions.convert_education(result["educ_cat"][0])
-        cs_raca_white, cs_raca_mixed, cs_raca_black = app_functions.convert_race(result["cs_raca"][0])
-        
-
-        result.drop(columns = ["educ_cat", "cs_raca"], inplace = True)
+       
+    
+        result.drop(columns = ["educ_cat"], inplace = True)
         
         #add extra columns
      
@@ -47,17 +46,9 @@ def make_pred():
         for col, value in zip(esc_names, esc_val):
             result[col] = value
 
-        raca_names = ["cs_raca_white", "cs_raca_mixed", "cs_raca_black"]
-        raca_values = [cs_raca_white, cs_raca_mixed, cs_raca_black]
-
-        for col, value in zip(raca_names, raca_values):
-            result[col] = value
         
-       
         prob = app_functions.prediction_prob(result)[0]
         
-
-
         data = [
             ("Failure", prob),
             ("Sucess", 1 - prob)
