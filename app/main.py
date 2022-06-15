@@ -46,7 +46,7 @@ def make_pred():
         for col, value in zip(esc_names, esc_val):
             result[col] = value
 
-        
+        result.drop(columns = ["benef_gov", "prior_tb", "vulnerability_mix"], inplace = True)
         prob = app_functions.prediction_prob(result)[0]
         
         data = [
