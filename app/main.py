@@ -51,8 +51,8 @@ def make_pred():
         print(result)
         
         data = [
-            ("Failure", prob),
-            ("Sucess", 1 - prob)
+            ("Desfavorável", prob),
+            ("Favorável", 1 - prob)
         ]
 
         #split data into two list
