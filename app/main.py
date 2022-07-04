@@ -37,7 +37,7 @@ def make_pred():
         under_5, five_to_9, nine_to_12, more_than_12 = app_functions.convert_education(result["educ_cat"][0])
        
     
-        result.drop(columns = ["educ_cat"], inplace = True)
+        result.drop(columns = ["n_of_morb", "educ_cat"], inplace = True)
         
         #add extra columns
      
@@ -46,7 +46,7 @@ def make_pred():
         for col, value in zip(esc_names, esc_val):
             result[col] = value
 
-        result.drop(columns = ["n_of_morb","vulnerability_mix"], inplace = True)
+        result.drop(columns = ["vulnerability_mix"], inplace = True)
         prob = app_functions.prediction_prob(result)[0]
         print(result)
         

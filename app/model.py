@@ -31,7 +31,7 @@ def create_feature(data):
 
 def prediction_prob(data):
 
-    model = lgb.Booster(model_file = 'app/lightgbm.txt')
+    model = lgb.Booster(model_file = 'app/lightgbm_undersampled.txt')
     #model = xgb.XGBClassifier()
     #model.load_model("app/xgb.json")
 
