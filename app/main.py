@@ -22,15 +22,27 @@ def make_pred():
         for col in result.columns:
             result[col] = result[col].astype(int)
         
-        result.rename(columns = {"tb": "prior_tb", "drug":"drug_yn", "other":"other_dishx",
-                                 "alch":"alcohol_yn", "tobaco":"tobacco_yn",
-                                 "race": "cs_raca", "sex": "cs_sexo", "esc":"educ_cat",
-                                 "age": "idade", "bf":"benef_gov",
-                                 "jail": "pop_liber", "hom": "pop_rua"}, inplace = True)
+        result.rename(columns = {"tb": "prior_tb", "drug":"ilicit_drug", "other":"other_dishx",
+                                 "alch":"alcohol", "tobaco":"tobacco",
+                                 "race": "race", "sex": "sex", "esc":"education",
+                                 "age": "age", "bf":"cash_transfer",
+                                 "jail": "liberty_dep", "hom": "exp_homelessness"}, inplace = True)
+
 
         ##add new features
         result = app_functions.create_feature(result)
-        print(result)
+    
+        #remove other dishx
+        result.drop(["other_dishx"], axis = 1, inplace = True)
+
+        #reorder columns
+        result = result[['age', 'race', 'sex', 'education', 'prior_tb', 'hiv', 'diabetes',
+                         'ilicit_drug', 'alcohol', 'tobacco', 'cash_transfer', 'liberty_dep',
+                         'exp_homelessness', 'n_of_morb']]
+
+
+
+        
 
 
         prob = app_functions.prediction_prob(result)[0]

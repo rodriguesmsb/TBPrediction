@@ -17,7 +17,7 @@ def convert_education(education):
 def create_feature(data):
 
     #add number of comorb.
-    data["n_of_morb"] = data[["prior_tb", "hiv", "diabetes", "other_dishx"]].sum(axis = 1)
+    data["n_of_morb"] = data[["hiv", "diabetes", "other_dishx"]].sum(axis = 1)
 
     return data
 
