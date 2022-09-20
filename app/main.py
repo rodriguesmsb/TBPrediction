@@ -30,25 +30,11 @@ def make_pred():
 
         ##add new features
         result = app_functions.create_feature(result)
-
-        ##encode race
-        
-
-        under_5, five_to_9, nine_to_12, more_than_12 = app_functions.convert_education(result["educ_cat"][0])
-       
-    
-        result.drop(columns = ["n_of_morb", "educ_cat"], inplace = True)
-        
-        #add extra columns
-     
-        esc_names = ["educ_cat_12+ years", "educ_cat_5-9 years", "educ_cat_9-12 years", "educ_cat_under_5"]
-        esc_val = [more_than_12, five_to_9, nine_to_12, under_5]
-        for col, value in zip(esc_names, esc_val):
-            result[col] = value
-
-        result.drop(columns = ["vulnerability_mix"], inplace = True)
-        prob = app_functions.prediction_prob(result)[0]
         print(result)
+
+
+        prob = app_functions.prediction_prob(result)[0]
+
         
         data = [
             ("Desfavorável", prob),
