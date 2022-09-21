@@ -419,51 +419,81 @@ canvas#pieChart{
         height: 30px;
         margin-top: 20px;
     }
+
+    .jail_label{
+        grid-column: 1/ span 3;
+        grid-row: 7/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
     
+    .jail_input{
+        grid-column: 1/ span 3;
+        grid-row: 7/ span 1;
+        height: 30px;
+        margin-top: 20px;
+       
+    }
+
+
+    .hom_label{
+        grid-column: 1/ span 3;
+        grid-row: 8/ span 1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
     
+    .hom_input{
+        grid-column: 1/ span 3;
+        grid-row: 8/ span 1;
+        height: 30px;
+        margin-top: 20px;
+    }
+    
+
     .com_header{
         grid-column: 2/ span 3;
-        grid-row: 7/ span 1;
+        grid-row: 9/ span 1;
     }
 
     .tb_label{
         grid-column: 1/ span 3;
-        grid-row: 8/ span 1;
+        grid-row: 10/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .tb_input{
         grid-column: 1/ span 3;
-        grid-row: 8/ span 1;
+        grid-row: 10/ span 1;
         height: 30px;
         margin-top: 20px;
     }
 
     .hiv_label{
         grid-column: 1/ span 3;
-        grid-row: 9/ span 1;
+        grid-row: 11/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .hiv_input{
         grid-column: 1/ span 3;
-        grid-row: 9/ span 1;
+        grid-row: 11/ span 1;
         height: 30px;
         margin-top: 20px;
     }
 
     .diabetes_label{
         grid-column: 1/ span 3;
-        grid-row: 10/ span 1;
+        grid-row: 12/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .diabetes_input{
         grid-column: 1/ span 3;
-        grid-row: 10/ span 1;
+        grid-row: 12/ span 1;
         height: 30px;
         margin-top: 20px;
     }
@@ -471,47 +501,47 @@ canvas#pieChart{
 
     .other_label{
         grid-column: 1/ span 3;
-        grid-row: 11/ span 1;
+        grid-row: 13/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .other_input{
         grid-column: 1/ span 3;
-        grid-row: 11/ span 1;
+        grid-row: 13/ span 1;
         height: 30px;
         margin-top: 20px;
     }
 
     .beha{
         grid-column: 1/ span 3;
-        grid-row: 12/ span 1;
+        grid-row: 14/ span 1;
     }
 
     .drug_label{
         grid-column: 1/ span 3;
-        grid-row: 13/ span 1;
+        grid-row: 15/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .drug_input{
         grid-column: 1/ span 3;
-        grid-row: 13/ span 1;
+        grid-row: 15/ span 1;
         height: 30px;
         margin-top: 20px;
     }
     
     .alch_label{
         grid-column: 1/ span 3;
-        grid-row: 14/ span 1;
+        grid-row: 16/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .alch_input{
         grid-column: 1/ span 3;
-        grid-row: 14/ span 1;
+        grid-row: 16/ span 1;
         height: 30px;
         margin-top: 20px;
     }
@@ -519,14 +549,14 @@ canvas#pieChart{
     
     .tobaco_label{
         grid-column: 1/ span 3;
-        grid-row: 15/ span 1;
+        grid-row: 17/ span 1;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     
     .tobaco_input{
         grid-column: 1/ span 3;
-        grid-row: 15/ span 1;
+        grid-row: 17/ span 1;
         height: 30px;
         margin-top: 20px;
     }
@@ -534,7 +564,7 @@ canvas#pieChart{
     
     .submit_button{
         grid-column: 3/ span 1;
-        grid-row: 16/ span 1;
+        grid-row: 18/ span 1;
         background-color:  #e1eedd;
         height: 50px;
         margin-left: 10px;
@@ -542,7 +572,7 @@ canvas#pieChart{
 
     .back_button{
         grid-column: 3/ span 1;
-        grid-row: 16/ span 1;
+        grid-row: 18/ span 1;
         margin-left: 10px;
 
     }
