@@ -14,6 +14,7 @@ def make_pred():
 
     #get user response
     if request.method == "POST":
+        #foo
 
         result = request.form.to_dict(flat = False) #convert form to a dict
 
