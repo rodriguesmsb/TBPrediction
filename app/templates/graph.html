@@ -21,6 +21,56 @@
         </header>
 
         <form action="/" method="POST", class = "form_layout">
+            <label for="quantity" class = "number_label">Input your patient age:</label>
+            <input type="number" name="age" id = "age_input" class = "number_input" placeholder="Age in years" min = 18 max = 120>
+
+            <label for="sex" class = "sex_label">Select you patient sex:</label>
+            <select name="sex" id="sex" class = "sex_input">
+                <option value=0>Female</option>
+                <option value=1>Male</option>
+            </select>
+
+
+            <label for="esc" class = "esc_label">Schooling</label>
+            <select name="esc" id="esc" class = "esc_input">
+                <option value=0>< 5 years</option>
+                <option value=1>5 to 9 years</option>
+                <option value=2>9 to 12 years</option>
+                <option value=3>>12 years</option>
+            </select>
+
+
+            <label for="tb" class = "tb_label">Does the patient had prior TB?</label>
+            <select name="tb" id="tb" class = "tb_input">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+            </select>
+
+            <label for="hiv" class = "hiv_label">Is the patient positive for HIV?</label>
+            <select name="hiv" id="hiv" class = "hiv_input">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+            </select>
+
+         
+            <label for="drug" class = "drug_label">Ilicit drug use</label>
+            <select name="drug" id="drug" class = "drug_input">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+            </select>
+
+
+            <label for="alch" class = "alch_label">Alcohol misuse:</label>
+            <select name="alch" id="alch" class = "alch_input">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+            </select>
+
+            <label for="tobaco" class = "tobaco_label">Smoking:</label>
+            <select name="tobaco" id="tobaco" class = "tobaco_input">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+            </select>
            
             <div class = "back_button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16"> 
