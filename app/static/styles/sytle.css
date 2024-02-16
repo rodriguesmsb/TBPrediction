@@ -110,80 +110,21 @@ body select{
     margin-top: 20px;
 }
 
-.race_label{
+
+.esc_label{
     grid-column: 1/ span 2;
     grid-row: 4/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-}
-
-.race_input{
-    grid-column: 1/ span 2;
-    grid-row: 4/ span 1;
-    height: 30px;
-    margin-top: 20px;
-}
-
-.esc_label{
-    grid-column: 1/ span 2;
-    grid-row: 5/ span 1;
-    font-family: 'Roboto', sans-serif;
 }
 
 .esc_input{
     grid-column: 1/ span 2;
-    grid-row: 5/ span 1;
+    grid-row: 4/ span 1;
     height: 30px;
     margin-top: 20px;
 }
 
-.bf_label{
-    grid-column: 1/ span 2;
-    grid-row: 6/ span 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.bf_input{
-    grid-column: 1/ span 2;
-    grid-row: 6/ span 1;
-    height: 30px;
-    margin-top: 20px;
-}
-
-.jail_label{
-    grid-column: 1/ span 2;
-    grid-row: 7/ span 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.jail_input{
-    grid-column: 1/ span 2;
-    grid-row: 7/ span 1;
-    height: 30px;
-    margin-top: 20px;
-   
-}
-
-.hom_label{
-    grid-column: 1/ span 2;
-    grid-row: 8/ span 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.hom_input{
-    grid-column: 1/ span 2;
-    grid-row: 8/ span 1;
-    height: 30px;
-    margin-top: 20px;
-}
-
-.com_header{
-    grid-column: 3/ span 2;
-    grid-row: 1/ span 1;
-}
 
 .tb_label{
     grid-column: 3/ span 2;
@@ -212,40 +153,6 @@ body select{
     grid-row: 3/ span 1;
     height: 30px;
     margin-top: 20px;
-}
-
-.diabetes_label{
-    grid-column: 3/ span 2;
-    grid-row: 4/ span 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.diabetes_input{
-    grid-column: 3/ span 2;
-    grid-row: 4/ span 1;
-    height: 30px;
-    margin-top: 20px;
-}
-
-.other_label{
-    grid-column: 3/ span 2;
-    grid-row: 5/ span 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.other_input{
-    grid-column: 3/ span 2;
-    grid-row: 5/ span 1;
-    height: 30px;
-    margin-top: 20px;
-}
-
-
-.beha{
-    grid-column: 5/ span 2;
-    grid-row: 1/ span 1;
 }
 
 .drug_label{
@@ -278,14 +185,14 @@ body select{
 
 
 .tobaco_label{
-    grid-column: 5/ span 2;
+    grid-column: 3/ span 2;
     grid-row: 4/ span 1;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .tobaco_input{
-    grid-column: 5/ span 2;
+    grid-column: 3/ span 2;
     grid-row: 4/ span 1;
     height: 30px;
     margin-top: 20px;
