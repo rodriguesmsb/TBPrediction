@@ -86,16 +86,19 @@
         <script>
             const form = document.getElementById("form");
             const age = document.getElementById("age_input");
+            const sex = document.getElementById("sex_input");
 
             form.addEventListener("submit", function(e){
                 
-                e.preventDefault();
+             
 
                 const age_value = age.value
+                const sex_value = sex.value
 
                 localStorage.setItem("age_data", age_value);
+                localStorage.setItem("sex_data", sex_value);
 
-                window.location.href = "graph.html";
+  
             })
         </script>
 
