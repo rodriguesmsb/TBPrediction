@@ -2,8 +2,18 @@ from flask import Flask
 from flask import request
 from flask import render_template
 from flask import jsonify
-import app.model as app_functions
 import pandas as pd
+import lightgbm as lgb
+
+#define a function for prediction
+def prediction_prob(data):
+
+    model = lgb.Booster(model_file = 'app/binary.txt')
+    #model = lightgbm_classifier = LGBMClassifier(random_state = 42)
+    #model.load_model("app/xgb.json")
+
+    return(model.predict(data))
+
 
 
 app = Flask(__name__)
@@ -37,34 +47,18 @@ def make_pred():
         #drop age
         result.drop(columns = ["age"], inplace = True)
 
+
+        #reorder columns
+        result = result[["cs_sexo",	"cs_escol_n",	"tratamento",
+                         "agravalcoo", "hiv", "agravdroga",	"agravtabac",
+                         "Adult", "Older"]]
+      
+
+
         print(result)
 
 
-        
-        #result.rename(columns = {"tb": "prior_tb", "drug":"ilicit_drug", "other":"other_dishx",
-        #                         "alch":"alcohol", "tobaco":"tobacco",
-        #                         "race": "race", "sex": "sex", "esc":"education",
-        #                         "age": "age", "bf":"cash_transfer",
-        #                         "jail": "liberty_dep", "hom": "exp_homelessness"}, inplace = True)
-
-
-        ##add new features
-        #result = app_functions.create_feature(result)
-    
-        #remove other dishx
-        #result.drop(["other_dishx"], axis = 1, inplace = True)
-
-        #reorder columns
-        #result = result[['age', 'race', 'sex', 'education', 'prior_tb', 'hiv', 'diabetes',
-        #                 'ilicit_drug', 'alcohol', 'tobacco', 'cash_transfer', 'liberty_dep',
-        #                 'exp_homelessness', 'n_of_morb']]
-
-
-
-        
-
-
-        #prob = app_functions.prediction_prob(result)[0]
+        #prob = prediction_prob(result)[0]
 
         
         data = [
