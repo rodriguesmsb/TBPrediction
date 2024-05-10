@@ -4,7 +4,7 @@
 
 #ignore some folders
 .git/
-venv/
+.venv/
 lib/
 lib64/
 include/

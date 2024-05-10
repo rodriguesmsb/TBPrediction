@@ -16,12 +16,30 @@ def make_pred():
     if request.method == "POST":
         #foo
 
-        #result = request.form.to_dict(flat = False) #convert form to a dict
+        result = request.form.to_dict(flat = False) #convert form to a dict
 
         #convert dict to a data frame
-        #result = pd.DataFrame.from_dict(result)
-        #for col in result.columns:
-        #    result[col] = result[col].astype(int)
+        result = pd.DataFrame.from_dict(result)
+        
+        for col in result.columns:
+            result[col] = result[col].astype(int)
+
+        #rename columns
+        result.rename(columns = {"sex": "cs_sexo", "esc":"cs_escol_n", "tb":"tratamento",
+                                 "alch":"agravalcoo", "drug":"agravdroga",
+                                 "tobaco":"agravtabac"}, inplace = True)
+        
+        #"idade_(18, 35]":"Adult"
+        #"idade_(50, 65]":"Older"
+        result["Adult"] = result["age"].apply(lambda x: 1 if x >18 and x <= 35 else 0)
+        result["Older"] = result["age"].apply(lambda x: 1 if x >50 and x <= 65 else 0)
+
+        #drop age
+        result.drop(columns = ["age"], inplace = True)
+
+        print(result)
+
+
         
         #result.rename(columns = {"tb": "prior_tb", "drug":"ilicit_drug", "other":"other_dishx",
         #                         "alch":"alcohol", "tobaco":"tobacco",
