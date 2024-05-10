@@ -12,19 +12,22 @@
     <title>Tuberculosis prediction</title>
 </head>
 
-<script>
-    window.onload = function() {
-      // Get the value from localStorage
-      var value = localStorage.getItem('age');
-      
-      // Display the value on the page
-      var output = document.getElementById('age_input');
-      output.innerText = value;
-    };
-  </script>
 
 <body>
     
+
+    <script>
+
+        const age = localStorage.getItem("age_data");
+
+        document.getElementById("form");
+        document.getElementById("age_input").values = age
+
+    
+
+
+
+    </script>
 
     <div id="container">
 
@@ -34,7 +37,7 @@
             <img src="../static/styles/logo.png">
         </header>
 
-        <form action="/" method="POST", class = "form_layout">
+        <form id = "form", action="/" method="POST", class = "form_layout">
             <label for="quantity" class = "number_label">Input your patient age:</label>
             <input type="number" name="age" id = "age_input" class = "number_input" placeholder="Age in years" min = 18 max = 120>
 

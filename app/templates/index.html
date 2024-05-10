@@ -12,19 +12,6 @@
     <title>Tuberculosis prediction</title>
 </head>
 
-    <script>
-      function submitValue() {
-        // Get the value entered by the user
-        var input = document.getElementById('age_input');
-        var value = input.value;
-        
-        // Store the value in localStorage
-        localStorage.setItem('age', value);
-        
-        // Redirect to the second page
-        window.location.href = 'graph.html';
-      }
-    </script>
 
 <body>
 
@@ -35,7 +22,7 @@
         </header>
 
 
-        <form action="/" method="POST", class = "form_layout">
+        <form id = "form" action="/" method="POST" class = "form_layout">
             <label for="quantity" class = "number_label">Input your patient age:</label>
             <input type="number" name="age" id = "age_input" class = "number_input" placeholder="Age in years" min = 18 max = 120 value = 18>
 
@@ -96,7 +83,21 @@
 
         </form>
 
-            
+        <script>
+            const form = document.getElementById("form");
+            const age = document.getElementById("age_input");
+
+            form.addEventListener("submit", function(e){
+                
+                e.preventDefault();
+
+                const age_value = age.value
+
+                localStorage.setItem("age_data", age_value);
+
+                window.location.href = "graph.html";
+            })
+        </script>
 
         <div class = "result_area">
            

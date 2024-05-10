@@ -55,7 +55,7 @@ def make_pred():
                          "Adult", "Older"]]
       
 
-
+        print(result)
         #prob = prediction_prob(result)[0]
 
         
