@@ -45,6 +45,7 @@ def make_pred():
         result["Older"] = result["age"].apply(lambda x: 1 if x >50 and x <= 65 else 0)
 
         #drop age
+    
         result.drop(columns = ["age"], inplace = True)
 
 
@@ -53,9 +54,6 @@ def make_pred():
                          "agravalcoo", "hiv", "agravdroga",	"agravtabac",
                          "Adult", "Older"]]
       
-
-
-        print(result)
 
 
         #prob = prediction_prob(result)[0]
@@ -69,6 +67,8 @@ def make_pred():
         #split data into two list
         labels = [row[0] for row in data]
         values = [row[1] for row in data]
+
+        #return data to other form
       
         return render_template("graph.html", labels = labels, values = values)
 

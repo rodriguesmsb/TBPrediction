@@ -20,6 +20,12 @@
             <img src="../static/styles/logo.png">
         </header>
 
+        <?php 
+             session_start();  
+              $age = $_POST['age']; 
+              $_SESSION['age'] = $age; 
+        ?>
+
         <form action="/" method="POST", class = "form_layout">
             <label for="quantity" class = "number_label">Input your patient age:</label>
             <input type="number" name="age" id = "age_input" class = "number_input" placeholder="Age in years" min = 18 max = 120 value = 18>
