@@ -50,8 +50,8 @@ def make_pred():
 
         
         data = [
-            ("Desfavorável", 0.5),
-            ("Favorável", 1 - 0.5)
+            ("LTFU", 0.5),
+            ("Cure", 1 - 0.5)
         ]
 
         #split data into two list

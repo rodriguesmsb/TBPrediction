@@ -1,0 +1,11 @@
+#ignore all log files
+*.log
+
+
+#ignore some folders
+.git/
+venv/
+lib/
+lib64/
+include/
+bin/
