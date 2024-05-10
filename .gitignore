@@ -1,6 +1,6 @@
 #ignore all log files
 *.log
-
+*.cfg
 
 #ignore some folders
 .git/
