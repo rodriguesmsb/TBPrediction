@@ -12,6 +12,20 @@
     <title>Tuberculosis prediction</title>
 </head>
 
+    <script>
+      function submitValue() {
+        // Get the value entered by the user
+        var input = document.getElementById('age_input');
+        var value = input.value;
+        
+        // Store the value in localStorage
+        localStorage.setItem('age', value);
+        
+        // Redirect to the second page
+        window.location.href = 'graph.html';
+      }
+    </script>
+
 <body>
 
     <div id="container">
@@ -20,11 +34,6 @@
             <img src="../static/styles/logo.png">
         </header>
 
-        <?php 
-             session_start();  
-              $age = $_POST['age']; 
-              $_SESSION['age'] = $age; 
-        ?>
 
         <form action="/" method="POST", class = "form_layout">
             <label for="quantity" class = "number_label">Input your patient age:</label>

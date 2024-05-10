@@ -12,9 +12,23 @@
     <title>Tuberculosis prediction</title>
 </head>
 
+<script>
+    window.onload = function() {
+      // Get the value from localStorage
+      var value = localStorage.getItem('age');
+      
+      // Display the value on the page
+      var output = document.getElementById('age_input');
+      output.innerText = value;
+    };
+  </script>
+
 <body>
+    
 
     <div id="container">
+
+        <p id="value-output"></p>
 
         <header>
             <img src="../static/styles/logo.png">
@@ -22,7 +36,7 @@
 
         <form action="/" method="POST", class = "form_layout">
             <label for="quantity" class = "number_label">Input your patient age:</label>
-            <input type="number" name="age" id = "age_input" class = "number_input" placeholder="Age in years" min = 18 max = 120  value ="<?php printf($_SESSION['age']); ?>">
+            <input type="number" name="age" id = "age_input" class = "number_input" placeholder="Age in years" min = 18 max = 120>
 
             <label for="sex" class = "sex_label">Select you patient sex:</label>
             <select name="sex" id="sex" class = "sex_input">
