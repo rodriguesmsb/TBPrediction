@@ -56,12 +56,12 @@ def make_pred():
       
 
         print(result)
-        #prob = prediction_prob(result)[0]
+        prob = prediction_prob(result)[0]
 
         
         data = [
-            ("LTFU", 0.5),
-            ("Cure", 1 - 0.5)
+            ("LTFU", prob),
+            ("Cure", 1 - prob)
         ]
 
         #split data into two list
