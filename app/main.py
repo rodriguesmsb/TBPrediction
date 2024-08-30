@@ -8,7 +8,7 @@ import lightgbm as lgb
 #define a function for prediction
 def prediction_prob(data):
 
-    model = lgb.Booster(model_file = 'app/binary.txt')
+    model = lgb.Booster(model_file = 'app/classifier.txt')
     #model = lightgbm_classifier = LGBMClassifier(random_state = 42)
     #model.load_model("app/xgb.json")
 
